@@ -1,7 +1,12 @@
 <div class="container">
-  <h1>CookBook</h1>
-
-  <p>Bem-vindo ao maior livro de receitas online</p>
+  <div class="jumbotron">
+  <h1 class="display-4">CookBook</h1>
+  <p class="lead">Bem-vindo ao maior livro de receitas online</p>
+  <hr class="my-4">
+  <p>Site de receitas da piku, melhor do brasil!!</p>
+  <%= link_to 'Saiba Mais', about_path, class: "btn btn-primary btn-lg", role: "button" %>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais</a>
+</div>
 
   <% @recipes.each do |recipe|  %>
     <h1><%= recipe.title %></h1>
