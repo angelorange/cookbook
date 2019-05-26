@@ -1,12 +1,14 @@
 <div class="container">
   <div class="jumbotron">
-  <h1 class="display-4">CuckBook</h1>
-  <p class="lead">Maior livro de receitas do Brasil para os amadores da sétima Arte</p>
+  <h1 class="display-4">CookBook</h1>
+  <p class="lead"Bem-vindo ao maior livro de receitas online</p>
   <hr class="my-4">
-  <p>Site de receitas como teste, olá, bem vindo você, amigo você é um amigo!</p>
+  <p>Bem-vindo ao maior livro de receitas online </p>
   <%= link_to 'Saiba Mais', about_path, class: "btn btn-primary btn-lg", role: "button" %>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais</a>
+  <%= link_to 'Enviar uma receita', new_recipe_path, class:"btn btn-primary btn-lg"  %>
 </div>
+
+
 
   <% @recipes.each do |recipe|  %>
     <h1><%= link_to recipe.title, recipe %></h1>
